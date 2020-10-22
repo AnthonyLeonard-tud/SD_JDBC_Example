@@ -12,7 +12,7 @@ public class JDBCExercise {
 		// TODO Auto-generated method stub
 			
 		CustomerSpecificationByNumber cSpecByNum = new CustomerSpecificationByNumber();
-		cSpecByNum.customerNumber = 347;
+		cSpecByNum.setCustomerNumber(347);
 			
 		CustomerRepository crsql = new CustomerSqlRepository();
 		List customerList = crsql.query(cSpecByNum);

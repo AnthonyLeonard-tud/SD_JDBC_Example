@@ -2,7 +2,7 @@ package com.samples.jdbc;
 
 public class CustomerSpecificationByNumber implements CustomerSpecification {
 
-	public int customerNumber;
+	private int customerNumber;
 	
 	public int getCustomerNumber() {
 		return customerNumber;
