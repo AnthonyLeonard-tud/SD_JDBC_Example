@@ -17,6 +17,12 @@ public class JDBCExercise {
 		CustomerRepository crsql = new CustomerSqlRepository();
 		List customerList = crsql.query(cSpecByNum);
 
+		// use customerList
+		customerList.forEach((temp) -> {
+			System.out.println(((Customer)temp).customerName);
+		});
+		
+		
 		String s = "";
 
 		
