@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -21,8 +20,8 @@ public class CustomerSqlRepository implements CustomerRepository  {
 		
 	}
 
-	public List query(CustomerSpecification specification) {
-		List<Customer> listOfCustomers = new LinkedList();
+	public List<Customer> query(CustomerSpecification specification) {
+		List<Customer> listOfCustomers = new LinkedList<Customer>();
 		
 		Statement stmt;
 		try {
